@@ -1,0 +1,182 @@
+html {
+    box-sizing: border-box;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    width: 100vw;
+    height: 100vh;
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#card {
+    width: 80vw;
+    height: 70vh;
+    max-width: 600px;
+    max-height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#top-section {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 1rem 1rem 2rem;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+#top-section h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+#top-section h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+#top-section p {
+    color: hsl(218, 22%, 67%);
+}
+
+#bottom-section {
+    height: 55%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#bottom-section ul {
+    list-style: none;
+    font-size: 0.8rem;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#bottom-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    line-height: 150%;
+}
+
+#bottom-left-section {
+    padding: 1.2rem 1rem 1rem 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 8px;
+}
+
+.price-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.price-text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#bottom-right-section {
+    padding: 1.5rem 1rem 1rem 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(179, 62%, 43%, 0.7);
+    border-radius: 0 0 8px 0;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    padding: 0.8rem;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+    margin: 0.7rem 0;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 27%, 0.1), 0 6px 20px 0 hsla(0, 0%, 26%, 0.1);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(71, 73%, 54%, 0.9);
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 27%, 0.3), 0 6px 20px 0 hsla(0, 0%, 26%, 0.3);
+    font-weight: 700;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 1rem;
+    right: 0.7rem;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 hsl(218, 44%, 22%, 0.4), 0 6px 20px 0 hsl(218, 44%, 22%, 0.3);
+
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 550px) {
+    
+    #card {
+        height: 100vh;
+        width: 90vw;
+        min-width: 330px;
+        min-height: 700px;
+        font-size: 0.9rem;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        overflow-y: auto;
+    }
+    
+    #top-section {
+        height: 30%;
+    }
+
+    #bottom-section {
+        height: 70%;
+        flex-direction: column;
+    }
+
+    #bottom-section > div {
+        height: 50%;
+        border-radius: 0;
+    }
+
+}
+
+
+
